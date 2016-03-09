@@ -1,0 +1,16 @@
+﻿{% include '_header.twig' %}
+
+		<div id="freewall" class="free-wall">
+		
+			{% setcontent pages = 'pages' %}
+			{% for page in pages %}
+			<div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			    <p><a href="{{ page.link }}"><img src="files/{{page.templatefields.brick_image }}">{{ page.title }}</a><p>
+			</div>
+			{% else %}
+                 <p>No recent pages for a brick.</p>
+            {% endfor %}
+		</div>
+		
+{% include '_footer.twig' %}
+

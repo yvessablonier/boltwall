@@ -1,0 +1,22 @@
+﻿{% include '_header.twig' %}
+
+		<div id="freewall" class="free-wall">
+		
+			
+			<div class="brick size21" data-position="0-0">{{record.image}}</div>
+			<div class="brick size21" data-position="0-0"><h2>{{record.title}}</h2></div>
+			<div class="brick size43" data-position="1-0">{{record.body}}</div>
+			
+			{# {% setcontent pages = 'pages' %}
+			{% for page in pages %}
+			<div class="brick size11">
+			    <p><a href="{{ page.link }}"><img src="{{ paths.root }}files/{{page.templatefields.brick_image }}"></a><p>
+			</div>
+			{% else %}
+                 <p>No recent pages for a brick.</p>
+            {% endfor %} #}
+			
+		</div>
+		
+{% include '_footer.twig' %}
+

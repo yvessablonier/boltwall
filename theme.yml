@@ -1,0 +1,47 @@
+# Header
+headertext: 'Boltwall'
+
+# Footer
+footertext: 'Change in theme.yml'
+footerlink: 'http://www.bolt.cm'
+
+
+# Additional template fields for pages as bricks
+templatefields:
+    index.twig:
+        brick_size: 
+            type: text
+            info: Size in cells. '23' means width span 2 cells and height span 3.
+            label: Brick Size
+            variant: inline
+        brick_position:
+            type: text
+            info: To give a brick a fix position. '0-0' means first, top left.
+            label: Brick Position
+            variant: inline
+        brick_image:
+            type: image
+            Label: Brick Image
+            
+    page.twig:
+        brick_size: 
+            type: text
+            info: Size in cells. '23' means width span 2 cells and height span 3.
+            label: Brick Size
+            variant: inline
+        brick_position:
+            type: text
+            info: To give a brick a fix position. '0-0' means first, top left.
+            label: Brick Position
+            variant: inline
+        brick_image:
+            type: image
+            Label: Brick Image
+                
+
+# Width and height for the generic cell. Freewall example comes with 160.
+cellwidth: 160
+
+# Gutter size, default is 15.
+gutterX: 15
+gutterY: 15
