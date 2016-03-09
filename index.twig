@@ -2,13 +2,51 @@
 
 		<div id="freewall" class="free-wall">
 		
+		    <style>
+			.brickback {
+			    background: #fff url("files/{{page.image }}") no-repeat;
+			}
+			</style>
+		
 			{% setcontent pages = 'pages' %}
 			{% for page in pages %}
+			
+			{% if page.templatefields.brick_image!="" %}
 			<div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
-			    <p><a href="{{ page.link }}"><img src="files/{{page.templatefields.brick_image }}">{{ page.title }}</a><p>
+			        <a href="{{ page.link }}">
+			            <div class="brickimage">
+			                <img src="files/{{page.templatefields.brick_image }}">
+			            </div>
+			            <div class="bricktitle">
+			                {{ page.title }}
+			            </div>
+			        </a>
 			</div>
 			{% else %}
-                 <p>No recent pages for a brick.</p>
+                {% if page.image!="" %}
+			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			        <a href="{{ page.link }}">
+			            <div class="brickimage">
+			                <img src="files/{{page.image}}">
+			            </div>
+			            <div class="bricktitle">
+			                {{ page.title }}
+			            </div>
+			        </a>
+			    </div>
+			    {% else %}
+			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			        <a href="{{ page.link }}">
+			             <div class="bricktitle">
+			                 {{ page.title }}
+			             </div>
+			        </a>
+			    </div>
+			    {% endif %}
+			{% endif %}
+			
+			{% else %}
+                 <p>No material for a brick.</p>
             {% endfor %}
 		</div>
 		

@@ -12,8 +12,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'orkneymedium';
     src: url('../fonts/orkney-medium-webfont.eot');
@@ -28,8 +26,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'orkneylight';
     src: url('../fonts/orkney-light-webfont.eot');
@@ -42,8 +38,6 @@
     font-style: normal;
 
 }
-
-
 
 
 @font-face {
@@ -151,14 +145,6 @@ aside p {
     background-color: #FFF;
 }
 
-.top-bar h1 {
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-}
-
-.top-bar h5 {
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-}
-
 .top-bar a:hover {
     text-decoration: none;
 }
@@ -178,14 +164,12 @@ aside p {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     font-size: 48px;
     line-height: 48px;
-    font-family: 'Open Sans', serif;
     padding: 0 12px 12px 0;
     font-weight: bold;
 }
 .headerphoto small {
     font-size: 28px;
     color: #DDD;
-    font-family: 'Open Sans', serif;
     font-weight: normal;
     margin-right: 14px;
 }
@@ -272,7 +256,6 @@ footer ul.dropdown {
 
     h5 {
         font-size: 18px;
-        font-family: 'Open Sans', serif;
     }
 
 
