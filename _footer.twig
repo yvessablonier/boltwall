@@ -1,29 +1,30 @@
 <!-- Footer -->
         <footer class="large-12 columns">
             <hr />
-			<p>Made with <a href="{{theme.footerlink}}"><i class="fa fa-bolt"></i> CMS</a> - {{theme.footertext}}</p>
+   <p>Made with <a href="{{theme.footerlink}}"><i class="fa fa-bolt"></i> CMS</a> - {{theme.footertext}}</p>
         </footer> 
         
 <script>   
 $(function() {
-	var wall = new Freewall("#freewall");
-	wall.reset({
-		selector: '.brick',
-		animate: true,
-		cellW: {{ theme.cellwidth }},
-		cellH: {{ theme.cellwidth }},
-		gutterX: {{ theme.gutterX }},
-	    gutterY: {{ theme.gutterY }},
-		onResize: function() {
-             wall.fitWidth();
-		}
-	});
-	wall.addCustomEvent('onBlockLoad', function(setting){
-		console.log(setting);
-	});
-	wall.fitWidth();
+    var wall = new Freewall("#freewall");
+    wall.reset({
+        selector: '.brick',
+        animate: true,
+        cellW: '{{ theme.cellwidth }}',
+        cellH: '{{ theme.cellheight }}',
+        gutterX: {{ theme.gutterX }},
+        gutterY: {{ theme.gutterY }},
+        
+        onResize: function() {
+            wall.fitWidth();
+        }
+    });
+    wall.addCustomEvent('onBlockLoad', function(setting){
+    console.log(setting);
+    });
+    wall.fitWidth();
 });
 </script>
-	<script src="{{ paths.theme }}javascripts/app.js" async defer></script>
+ <script src="{{ paths.theme }}javascripts/app.js" async defer></script>
 </body>
 </html>

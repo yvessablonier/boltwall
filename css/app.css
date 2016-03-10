@@ -53,6 +53,19 @@
 
 }
 
+/* Override foundation */
+.top-bar-section ul li > a {
+    font-family: 'orkneyregular';
+    font-size: 16px;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    color: #333;
+    background: #fff;
+}
+
 body {
     font-family: 'orkneyregular';
     background-color: #F8F8F8;

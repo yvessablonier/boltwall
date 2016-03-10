@@ -5,19 +5,20 @@
 			{% if record.image!="" %}
 			    <div class="brick size22"><img src="../files/{{record.image}}"></div>
 			{% endif %}
-			
-			<div class="brick size21" data-position="0-0"><h2>{{record.title}}</h2></div>
-			<div class="brick size43">{{record.body}}</div>
-			
+			    <div class="brick size21" data-position="0-0"><h2>{{record.title}}</h2></div>
+			    <div class="brick size43">{{record.body}}</div>
 			{# {% setcontent pages = 'pages' %}
-			{% for page in pages %}
-			<div class="brick size11">
-			    <p><a href="{{ page.link }}"><img src="{{ paths.root }}files/{{page.templatefields.brick_image }}"></a><p>
-			</div>
-			{% else %}
-                 <p>No recent pages for a brick.</p>
-            {% endfor %} #}
 			
+			{% for page in pages %}
+			    <div class="brick size11">
+			        <p><a href="{{ page.link }}"><img src="{{ paths.root }}files/{{page.templatefields.brick_image }}"></a><p>
+			    </div>
+			{% else %}
+                 <div class="brick size33" data-position="0-0">
+                     <p>No pages for the brickwall.</p>
+                </div>
+            {% endfor %} #}
+		
 		</div>
 		
 {% include '_footer.twig' %}

@@ -20,8 +20,8 @@ templatefields:
             label: Brick Position
             variant: inline
         brick_image:
+            label: Brick image
             type: image
-            Label: Brick Image
             
     page.twig:
         brick_size: 
@@ -41,6 +41,7 @@ templatefields:
 
 # Width and height for the generic cell. Freewall example comes with 160.
 cellwidth: 160
+cellheight: auto
 
 # Gutter size, default is 15.
 gutterX: 15

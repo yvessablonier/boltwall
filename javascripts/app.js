@@ -1,8 +1,8 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
     $(document).foundation();
 });
 
-// Initialize the Magnific popup shizzle. Fancybox is still here as a trigger, for backwards compatibility.
+/*// Initialize the Magnific popup shizzle. Fancybox is still here as a trigger, for backwards compatibility.
 $('.magnific, .fancybox, div.imageholder a').magnificPopup({
     type: 'image',
     gallery: { enabled: true },
