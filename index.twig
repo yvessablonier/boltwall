@@ -6,7 +6,7 @@
 			{% for page in pages %}
 			
 			{% if page.templatefields.brick_image!="" %}
-			<div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			<div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}" style="background-color: {{ page.templatefields.brick_bgcolor }};">
 			        <a href="{{ page.link }}">
 			            <div class="brickimage">
 			                <img src="files/{{page.templatefields.brick_image }}">
@@ -18,7 +18,7 @@
 			</div>
 			{% else %}
                 {% if page.image!="" %}
-			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}" style="black; background-color: {{ page.templatefields.brick_bgcolor }};">
 			        <a href="{{ page.link }}">
 			            <div class="brickimage">
 			                <img src="files/{{page.image}}">
@@ -29,7 +29,7 @@
 			        </a>
 			    </div>
 			    {% else %}
-			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}">
+			    <div class="brick size{{ page.templatefields.brick_size }}" data-position="{{ page.templatefields.brick_position }}" style="background-color: {{ page.templatefields.brick_bgcolor }};">
 			        <a href="{{ page.link }}">
 			             <div class="bricktitle">
 			                 {{ page.title }}

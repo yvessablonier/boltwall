@@ -22,6 +22,10 @@ templatefields:
         brick_image:
             label: Brick image
             type: image
+        brick_bgcolor:
+            label: Background Color
+            type: text
+            variant: inline
             
     page.twig:
         brick_size: 
@@ -36,7 +40,11 @@ templatefields:
             variant: inline
         brick_image:
             type: image
-            Label: Brick Image
+            label: Brick Image
+        brick_bgcolor:
+            label: Background Color
+            type: text
+            variant: inline
                 
 
 # Width and height for the generic cell. Freewall example comes with 160.
